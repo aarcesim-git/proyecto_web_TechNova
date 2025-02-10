@@ -1,0 +1,416 @@
+*{ /* Estilos generales */
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /*corrección para que no haya que 'deslizar' para ver toda la pantalla*/
+}
+
+body {
+    background-color: #ddeef7;
+    color:#01307b;
+    font-family: "Patrick Hand", serif;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: 'Abril Fatface', serif;
+    color:#003893;
+}
+
+/* NOMBRE-LOGO*/
+.nombre{
+    color:#003893;
+    font-family: 'Abril Fatface', serif;
+    font-size: 50px;
+    text-align: center;
+    margin-right: 300px;
+}
+
+/* HEADER */
+header {
+    background: #abd4ff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    font-family: 'Abril Fatface', serif;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+header nav ul li a {
+    margin-right: 30px;
+    color:#003893;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+nav a.active {
+    font-weight:bolder;
+    text-decoration: underline;
+    color: #3d5f93;
+    text-transform: uppercase;
+}
+
+main h1{
+    font-family: "Abril Fatface", serif;
+    font-size: 40px;
+    color: #112151; 
+}
+
+/* INICIO */
+/* Historia-marca */
+.hist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.hist img {
+    width: 300px; 
+    height: auto;
+}
+
+.hist .texto {
+    flex: 1; /* El texto se expande para ocupar el espacio restante */
+}
+
+/* Valores */
+.valores{
+    background-color: #f7f9fb;
+    padding: 20px 0;
+}
+.value-card:hover {
+    transform: scale(1.05);
+}
+section.valores {
+    padding: 40px 20;
+    text-align: center;
+}
+  
+h1.valores {
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+
+/* Tarjetas de valores */
+.value-card {
+    background-color: #bfd1e5;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px; 
+    box-shadow: 0 2px 4px #0a1e521a;
+    flex: 1 1 0; 
+    min-width: 250px; 
+    width: 25%; 
+}
+
+.value-card h3 {
+    font-family: "Nunito", serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #112151;
+} 
+.value-card p {
+    line-height: 1.6;
+    color: #112151;
+}
+
+/* Contenedor para las tarjetas */
+.box {
+    display: flex; 
+    justify-content: center; 
+    padding: 0;
+    margin: 10px;
+}
+
+.container{
+    display:flex;
+    gap: 10px;
+}
+.h1.container{
+    text-align: center;
+    display: flex;
+}
+.do{
+    text-align: center;
+}
+.do, .elegir{
+    flex-grow: 2;
+}
+h1.elegir{
+    text-align: center;
+}
+.h1.contact{
+    text-align: center;
+}
+.lista-servicios{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lista-servicios p{
+    background-color: #bfd1e5;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.lista-servicios p:hover {
+    transform: scale(1.05);
+}
+
+.columna-derecha{
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.columna-derecha p{
+    text-align: justify;
+}
+
+.bloque{
+    padding:20px;
+    border-radius: 5px;
+}
+
+/* PRODUCTOS */
+.productosH1{ /* Título H1 */
+    text-align: center;
+    margin-top: 15px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 50px 10px;
+    margin: 15px;
+}
+
+.card {
+    background-color: #bfd1e5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card strong{
+    font-family: "Nunito", serif;
+    font-size: 1rem;
+}
+
+.mecan{ /* Mecánica de trabajo */
+    background-color: #f7f9fb;
+    padding: 20px 0
+}
+
+.grid-container strong{
+    font-family: "Nunito", serif;
+    font-size: 1rem
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-card {
+    background-color: #bfd1e5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 50px 10px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    width: 170px;
+    height: 150px; 
+    margin-right: 15px; 
+    border-radius: 12%; 
+}
+
+.product-info {
+    display:flexbox;
+}
+
+/* PRESUPUESTO */
+.presupuestoH1{
+    text-align: center;
+    margin-top: 15px;
+}
+
+form { /* Interior del formulario*/
+    background-color: #bfd1e5;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 35px;
+    margin: 35px auto;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #003893;
+    font-family: 'Abril Fatface', serif;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #0a1e521a;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #003893;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #112151;
+}
+
+label input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/*CONTACTO*/
+.contact-details {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contact-details div {
+    flex: 1 1 calc(50% - 20px);
+    background-color: #bfd1e5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-details .social-rectangle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.social-links-vertical {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: #bfd1e5;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px; 
+    box-shadow: 0 2px 4px #0a1e521a;
+    flex:  1 1 calc(45% - 20px); /* Las tarjetas se ajustan al espacio disponible */
+    min-width: 250px; 
+}  
+
+.social-links-vertical a {
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #112151;
+    font-size: 1em;
+}
+
+.social-links-vertical img {
+    width: 50px;
+    height: 50;
+}
+
+.social-links-vertical span {
+    font-size: 1em;
+    margin: 10px;
+}
+
+.map {
+    text-align: center;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+/*FOOTER*/
+footer {
+    background: #abd4ff;
+    color:#112151;
+    text-align: center;
+    padding: 5px 20px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a{ /* Links redes sociales y aviso legal*/
+    color:#112151;
+}

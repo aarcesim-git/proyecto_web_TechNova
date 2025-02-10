@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicita tu Presupuesto - TechNova</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Patrick+Hand&display=swap" rel="stylesheet"></head>
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../img/iconoTN.png" alt="Mi Logo" style="height: 100px;">
+        </a>
+        <nav>
+            <ul>
+                <p class="nombre">TechNova</p>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Servicios</a></li>
+                <li><a href="presupuesto.html" class="active">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="presupuestoH1">Solicita tu presupuesto</h1>
+        <form action="#" method="post"> 
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="info">Solicite más información:</label>
+            <textarea id="info" name="info" required></textarea>
+            <label>
+                <input type="checkbox" name="privacy" required> Acepto la Política de privacidad
+            </label>
+            <button type="submit">Enviar</button> <!-- Botón para enviar el formulario -->
+        </form>
+    </main>
+    <footer>
+        <p>© 2020 TechNova Web Design | <a href="#">Aviso legal</a></p>
+        <div>
+            <a href="https://facebook.com" target="_blank" >Facebook</a> | 
+            <a href="https://instagram.com" target="_blank" >Instagram</a> | 
+            <a href="https://linkedin.com" target="_blank" >LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
