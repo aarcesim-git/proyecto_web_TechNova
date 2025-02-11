@@ -414,3 +414,78 @@ footer {
 footer a{ /* Links redes sociales y aviso legal*/
     color:#112151;
 }
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+    
+    .nombre {
+        font-size: 30px;
+    }
+    
+    .box, .hist, .contact-details, .card-container, .grid-container, .social-rectangle {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .value-card, .card, .contact-details div, .social-rectangle {
+        width: 90%;
+    }
+    
+    .hist img, .grid-container img {
+        width: 90%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+        width: 100%;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+    
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nombre {
+        font-size: 25px;
+    }
+    
+    .box, .hist, .contact-details, .card-container, .grid-container, .social-rectangle {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .value-card, .card, .contact-details div, .social-rectangle {
+        width: 100%;
+    }
+    
+    .hist img, .grid-container img {
+        width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 5px;
+    }
+}
