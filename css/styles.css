@@ -5,10 +5,12 @@
 }
 
 body {
+    margin: 0;
     background-color: #ddeef7;
     color:#01307b;
     font-family: "Patrick Hand", serif;
     min-height: 100vh;
+
 }
 
 h1, h2, h3 {
@@ -59,6 +61,7 @@ nav a.active {
     color: #3d5f93;
     text-transform: uppercase;
 }
+
 
 main h1{
     font-family: "Abril Fatface", serif;
@@ -275,6 +278,15 @@ h1.elegir{
     margin-top: 15px;
 }
 
+.presupuestoDescripcion {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #003893;
+    font-family: "Nunito", serif;
+}
+
 form { /* Interior del formulario*/
     background-color: #bfd1e5;
     display: flex;
@@ -406,7 +418,7 @@ footer {
     color:#112151;
     text-align: center;
     padding: 5px 20px;
-    position: static;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
