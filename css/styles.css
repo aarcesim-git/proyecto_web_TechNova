@@ -39,6 +39,11 @@ header {
     font-family: 'Abril Fatface', serif;
 }
 
+#logoTN{
+    height: auto;
+    max-height: 100px;
+}
+
 header nav ul {
     list-style: none;
     display: flex;
@@ -394,7 +399,7 @@ label input[type="checkbox"] {
 
 .social-links-vertical img {
     width: 50px;
-    height: 50;
+    height: 50px;
 }
 
 .social-links-vertical span {
